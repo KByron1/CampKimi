@@ -21,7 +21,6 @@ body {
   height: auto;
   max-height: vh;
   object-fit: contain;
-  transform: scale(1.5);
 }
 .info {
   padding: 4rem 1.5rem;
