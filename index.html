@@ -8,18 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay">
-      <div class="hero-text">
-        <h1>Camp Kimi™️</h1>
-        <p class="tagline">A 30th Birthday Weekend Retreat</p>
-        <p class="location-date">November 21–24 • Catskills, NY</p>
-        <a href="https://example.com/rsvp-form" class="cta-button">I'm In</a>
-      </div>
-    </div>
+  <header class="banner-header">
+    <img src="assets/banner.png" alt="Camp Kimi Banner" class="top-banner">
   </header>
 
-  <section class="info">
+  <section class="info fade-in-section">
     <div class="content">
       <h2>You're Invited</h2>
       <p>Join us for a dreamy weekend in the Catskills to celebrate Kimi’s 30th birthday. Think 90s summer camp vibes — cozy cabins, shared meals, laughter, and friendship.</p>
@@ -38,7 +31,27 @@
           <p>~$300 for lodging + travel</p>
         </div>
       </div>
+      <a href="https://example.com/rsvp-form" class="cta-button">I'm In</a>
     </div>
   </section>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in-section');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
 </body>
 </html>
