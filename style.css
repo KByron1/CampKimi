@@ -1,0 +1,37 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f4;
+    color: #2E5339;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.hero {
+    text-align: center;
+    padding: 2em;
+}
+.banner {
+    max-width: 200px;
+    margin-bottom: 1em;
+}
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    margin: 1em;
+    background-color: #7A9E7E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav a {
+    margin: 0 1em;
+    color: #2E5339;
+    text-decoration: none;
+    font-weight: bold;
+}
+ul {
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+}
