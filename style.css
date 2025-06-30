@@ -8,20 +8,16 @@ body {
   color: #2E5339;
 }
 .banner-header {
-  height: 100vh;
+  width: 100%;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 0;
 }
+
 .top-banner {
   width: 100%;
   height: auto;
-  max-height: vh;
-  object-fit: contain;
+  display: block;
 }
+
 .info {
   padding: 4rem 1.5rem;
   background-color: #ffffff;
