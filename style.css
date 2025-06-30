@@ -10,14 +10,15 @@ body {
 .banner-header {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  height: auto;
 }
-
 .top-banner {
   width: 100%;
   height: auto;
   display: block;
+  transition: opacity 0.2s ease-out;
 }
-
 .info {
   padding: 4rem 1.5rem;
   background-color: #ffffff;
